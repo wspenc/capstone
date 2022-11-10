@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Grocery List</title>
+</head>
+<body>
+    <h1>Grocery List</h1>
+   <form id="grocery-form">
+    <input type="text" id="grocery-item" placeholder="Item name">
+    <label for="quantity">Quantity (max 10):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10">
+    <input type="submit" id="enter" value="Enter"> 
+   </form> 
+
+   <form id="list-form">
+    <ul>
+        <li id="grocery-list"></li>
+    </ul>
+   </form>
+
+   <section id="results-section"></section>
+
+   <form id="delete-form">
+    
+    <input type="submit" class="delete-all" value="Delete All">
+   </form>
+
+   <button id="meal-ideas">Meal Ideas</button>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script src="main.js"></script>
+
+</html>

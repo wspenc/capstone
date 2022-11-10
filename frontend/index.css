@@ -1,0 +1,16 @@
+.quantity::-webkit-inner-spin-button, 
+.quantity::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
+ul{
+list-style-type: none;
+}
+
+p{
+font-size: 20px;
+font-weight: 600;
+}
+
