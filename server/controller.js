@@ -1,6 +1,6 @@
 const database = []
-
 module.exports = {
+    
     createGrocery: (req, res) => {
         const item = req.body.item
         const quantity = req.body.quantity
@@ -16,14 +16,13 @@ module.exports = {
     },
 
     deleteAll: (req, res) => {
-        database.splice(0, 1)
-        // database = []
-        console.log(database)
+        database.splice(0, database.length)
         res.status(200).send(database)
     },
 
     getMeal: (req, res) => {
-        const meals = ["Tonkotsu Ramen", "Steak and Potatoes", "Tacos", "Spaghetti", "Stri Fry", "Fajitas", "BBQ Pork Sandwiches", "Wraps", "Chicken Wings", "Beef Stew", "Lemon Chicken" ];
+        const meals = ["Tonkotsu Ramen", "Steak and Potatoes", "Tacos", "Spaghetti", "Stir Fry", "Fajitas", "BBQ Pork Sandwiches", "Wraps", "Chicken Wings", "Beef Stew", "Lemon Chicken", "Sushi", "Okonomiyaki", "Udon", "Oyakodon", "Yakiniku" ];
+
         let randomIndex = Math.floor(Math.random() * meals.length);
         let randomMeal = meals[randomIndex];
       

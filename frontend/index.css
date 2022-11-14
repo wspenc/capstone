@@ -1,16 +1,129 @@
-.quantity::-webkit-inner-spin-button, 
-.quantity::-webkit-outer-spin-button {  
+html{
+   font-family: Arial, sans-serif;
+   line-height: 1.5;
+   background-color: #DFDFDF;
+   position: absolute;
+   top: 5%;
+   left: 35%;
+   font-size: 20px;
+}
+
+h1{
+   margin-left: 6.5rem;
+}
+
+#quantity::-webkit-inner-spin-button, 
+#quantity::-webkit-outer-spin-button {  
 
    opacity: 1;
 
 }
 
-ul{
-list-style-type: none;
-}
+
 
 p{
 font-size: 20px;
 font-weight: 600;
 }
+
+input[type="text"], input[type="number"]{
+	width: 10vw;
+  	height: 20px;
+  	padding: 3px;
+  	font-size: 1rem;
+  	border: 1px solid gray;
+}
+input[type="number"]{
+   width: 3vw;
+}
+
+#delete-all{
+  margin-top: 10px;
+}
+
+input[type=checkbox]:checked + label {
+   color:black;
+   text-decoration: line-through;
+ } 
+
+ #cb {
+   height: 18px;
+   width: 18px;
+   background-color: #eee;
+   position: relative;
+   vertical-align: middle;
+   accent-color: #4F86C8;
+ }
+ 
+
+ .btn{
+   font-family: Roboto, sans-serif;
+   font-size: 17px;
+   color: #fff;
+   padding: 4px 25px;
+   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+   border-radius: 50px;
+   transition : 1000ms;
+   transform: translateY(0);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   cursor: pointer;
+}
+
+.btn:hover{
+   transition : 1000ms;
+   transform : translateY(-0px);
+}
+
+ #enter{
+ margin-top: -2px;
+ float: right;
+ margin-left: .5rem;
+ background-color: #57CF78;
+ border: 2px solid #57CF78;
+ }
+ 
+ #enter:hover{
+ 
+ padding: 5px 20px;
+ transform : translateY(-0px);
+ background-color: #fff;
+ color: #57CF78  ;
+ border: solid 2px #57CF78  ;
+ }
+ 
+
+ #delete-all{
+   background-color: #CF5757   ;
+   border: 2px solid #CF5757   ;
+   }
+   
+   #delete-all:hover{
+   padding: 4px 60px;
+   background-color: #fff;
+   color: #CF5757 ;
+   border: solid 2px #CF5757  ;
+   }
+
+
+   #meal-ideas{
+      background-color: #57A0CF ;
+      border: 2px solid #57A0CF ;
+      }
+      
+      #meal-ideas:hover{
+      padding: 4px 40px;
+      background-color: #fff;
+      color: #57A0CF ;
+      border: solid 2px #57A0CF ;
+      }
+
+
+
+      a{
+         text-decoration: none;
+         color: black;
+      }
+
 
