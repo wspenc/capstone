@@ -8,21 +8,9 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get("/",(req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'))
-})
+const {createGrocery, deleteAll, getMeal} = require('./controller')
 
-app.get('/js', (req, res) => {
-    res.sendFile(path.join(__dirname, '../main.js'))
-})
-
-
-const port = process.env.PORT || 5000
-
-app.get('/css', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.css'))
-})
-
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}`)
-})
+app.post("/api/create", createGrocery);
+app.delete("/api/delete-all", deleteAll)
+app.get("/api/meal", getMeal)
+app.listen(4000, () => console.log("Server running on 4000"));

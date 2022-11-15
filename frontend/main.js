@@ -2,7 +2,7 @@
 
 const mealBtn = document.getElementById("meal-ideas")
 const getMeal = () => {
-    axios.get("")
+    axios.get("http://localhost:4000/api/meal/")
         .then(res => {
             const data = res.data;
             
@@ -38,7 +38,7 @@ const createGrocery = (event) => {
     groceryItem.value = ''
     itemCount.value = ''
 
-    axios.post(body)
+    axios.post("http://localhost:4000/api/create/", body)
     .then((res) => {
         let data = res.data
         for(let i = 0; i < data.length; i++){
@@ -50,7 +50,7 @@ const createGrocery = (event) => {
     })
 }
     function deleteList(){
-        axios.delete()
+        axios.delete("http://localhost:4000/api/delete-all/")
         .then((res) => {
             let data = res.data
             for(let i = 0; i < data.length; i++){
