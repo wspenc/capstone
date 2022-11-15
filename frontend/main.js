@@ -2,7 +2,7 @@
 
 const mealBtn = document.getElementById("meal-ideas")
 const getMeal = () => {
-    axios.get("http://localhost:4000/api/meal/")
+    axios.get("")
         .then(res => {
             const data = res.data;
             
@@ -38,7 +38,7 @@ const createGrocery = (event) => {
     groceryItem.value = ''
     itemCount.value = ''
 
-    axios.post("http://localhost:4000/api/create/", body)
+    axios.post(body)
     .then((res) => {
         let data = res.data
         for(let i = 0; i < data.length; i++){
@@ -50,7 +50,7 @@ const createGrocery = (event) => {
     })
 }
     function deleteList(){
-        axios.delete("http://localhost:4000/api/delete-all/")
+        axios.delete()
         .then((res) => {
             let data = res.data
             for(let i = 0; i < data.length; i++){
@@ -68,9 +68,6 @@ const createGrocery = (event) => {
         let container = document.createElement('div')
         let item = document.createElement('label')
         let checkbox = document.createElement('input');
-             
-                    // Assigning the attributes
-                    // to created checkbox
                     checkbox.type = "checkbox";
                     checkbox.name = "checkbox";
                     checkbox.value = "checkbox";
