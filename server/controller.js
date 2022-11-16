@@ -21,7 +21,7 @@ module.exports = {
     },
 
     getMeal: (req, res) => {
-        const meals = ["Tonkotsu Ramen", "Steak and Potatoes", "Tacos", "Spaghetti", "Stir Fry", "Fajitas", "BBQ Pork Sandwiches", "Wraps", "Chicken Wings", "Beef Stew", "Lemon Chicken", "Sushi", "Okonomiyaki", "Udon", "Oyakodon", "Yakiniku" ];
+        const meals = ["Pizza", "Burgers", "Tonkotsu Ramen", "Steak", "Tacos", "Spaghetti", "Stir Fry", "Fajitas", "BBQ Pork Sandwiches", "Wraps", "Chicken Wings", "Beef Stew", "Lemon Chicken", "Sushi", "Okonomiyaki", "Udon", "Katsudon", "Yakiniku" ];
 
         let randomIndex = Math.floor(Math.random() * meals.length);
         let randomMeal = meals[randomIndex];
